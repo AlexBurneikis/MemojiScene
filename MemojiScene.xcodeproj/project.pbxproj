@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3833297728CAC28E00DB425F /* alien.scnz in Resources */ = {isa = PBXBuildFile; fileRef = 3833297628CAC28E00DB425F /* alien.scnz */; };
+		3833297F28CAC4BD00DB425F /* alien_head_SPECROUGHLW.heic in Resources */ = {isa = PBXBuildFile; fileRef = 3833297828CAC4BC00DB425F /* alien_head_SPECROUGHLW.heic */; };
+		3833298028CAC4BD00DB425F /* alien_head_DIFFUSE.heic in Resources */ = {isa = PBXBuildFile; fileRef = 3833297928CAC4BC00DB425F /* alien_head_DIFFUSE.heic */; };
+		3833298128CAC4BD00DB425F /* alien-cameraGrid.atx in Resources */ = {isa = PBXBuildFile; fileRef = 3833297A28CAC4BC00DB425F /* alien-cameraGrid.atx */; };
+		3833298228CAC4BD00DB425F /* alien_head_AO.heic in Resources */ = {isa = PBXBuildFile; fileRef = 3833297B28CAC4BC00DB425F /* alien_head_AO.heic */; };
+		3833298328CAC4BD00DB425F /* alien-cameras.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3833297C28CAC4BC00DB425F /* alien-cameras.scn */; };
+		3833298428CAC4BD00DB425F /* alien_head_ONTOP.heic in Resources */ = {isa = PBXBuildFile; fileRef = 3833297D28CAC4BD00DB425F /* alien_head_ONTOP.heic */; };
+		3833298528CAC4BD00DB425F /* alien-camera.atx in Resources */ = {isa = PBXBuildFile; fileRef = 3833297E28CAC4BD00DB425F /* alien-camera.atx */; };
 		3863CA2A28CABEF400D31BBE /* MemojiSceneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863CA2928CABEF400D31BBE /* MemojiSceneApp.swift */; };
 		3863CA2C28CABEF400D31BBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863CA2B28CABEF400D31BBE /* ContentView.swift */; };
 		3863CA2E28CABEF500D31BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3863CA2D28CABEF500D31BBE /* Assets.xcassets */; };
 		3863CA3128CABEF500D31BBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3863CA3028CABEF500D31BBE /* Preview Assets.xcassets */; };
+		3863CA3928CABF8700D31BBE /* SceneView in Frameworks */ = {isa = PBXBuildFile; productRef = 3863CA3828CABF8700D31BBE /* SceneView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3833297628CAC28E00DB425F /* alien.scnz */ = {isa = PBXFileReference; lastKnownFileType = file; path = alien.scnz; sourceTree = "<group>"; };
+		3833297828CAC4BC00DB425F /* alien_head_SPECROUGHLW.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = alien_head_SPECROUGHLW.heic; sourceTree = "<group>"; };
+		3833297928CAC4BC00DB425F /* alien_head_DIFFUSE.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = alien_head_DIFFUSE.heic; sourceTree = "<group>"; };
+		3833297A28CAC4BC00DB425F /* alien-cameraGrid.atx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alien-cameraGrid.atx"; sourceTree = "<group>"; };
+		3833297B28CAC4BC00DB425F /* alien_head_AO.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = alien_head_AO.heic; sourceTree = "<group>"; };
+		3833297C28CAC4BC00DB425F /* alien-cameras.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "alien-cameras.scn"; sourceTree = "<group>"; };
+		3833297D28CAC4BD00DB425F /* alien_head_ONTOP.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = alien_head_ONTOP.heic; sourceTree = "<group>"; };
+		3833297E28CAC4BD00DB425F /* alien-camera.atx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alien-camera.atx"; sourceTree = "<group>"; };
 		3863CA2628CABEF400D31BBE /* MemojiScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemojiScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3863CA2928CABEF400D31BBE /* MemojiSceneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemojiSceneApp.swift; sourceTree = "<group>"; };
 		3863CA2B28CABEF400D31BBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3863CA3928CABF8700D31BBE /* SceneView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3833298628CAC4F100DB425F /* alien */ = {
+			isa = PBXGroup;
+			children = (
+				3833297B28CAC4BC00DB425F /* alien_head_AO.heic */,
+				3833297928CAC4BC00DB425F /* alien_head_DIFFUSE.heic */,
+				3833297D28CAC4BD00DB425F /* alien_head_ONTOP.heic */,
+				3833297828CAC4BC00DB425F /* alien_head_SPECROUGHLW.heic */,
+				3833297E28CAC4BD00DB425F /* alien-camera.atx */,
+				3833297A28CAC4BC00DB425F /* alien-cameraGrid.atx */,
+				3833297C28CAC4BC00DB425F /* alien-cameras.scn */,
+				3833297628CAC28E00DB425F /* alien.scnz */,
+			);
+			path = alien;
+			sourceTree = "<group>";
+		};
 		3863CA1D28CABEF400D31BBE = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +84,7 @@
 		3863CA2828CABEF400D31BBE /* MemojiScene */ = {
 			isa = PBXGroup;
 			children = (
+				3833298628CAC4F100DB425F /* alien */,
 				3863CA2928CABEF400D31BBE /* MemojiSceneApp.swift */,
 				3863CA2B28CABEF400D31BBE /* ContentView.swift */,
 				3863CA2D28CABEF500D31BBE /* Assets.xcassets */,
@@ -83,6 +117,9 @@
 			dependencies = (
 			);
 			name = MemojiScene;
+			packageProductDependencies = (
+				3863CA3828CABF8700D31BBE /* SceneView */,
+			);
 			productName = MemojiScene;
 			productReference = 3863CA2628CABEF400D31BBE /* MemojiScene.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 3863CA1D28CABEF400D31BBE;
+			packageReferences = (
+				3863CA3728CABF8600D31BBE /* XCRemoteSwiftPackageReference "SceneView" */,
+			);
 			productRefGroup = 3863CA2728CABEF400D31BBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +166,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3863CA3128CABEF500D31BBE /* Preview Assets.xcassets in Resources */,
+				3833298228CAC4BD00DB425F /* alien_head_AO.heic in Resources */,
+				3833298528CAC4BD00DB425F /* alien-camera.atx in Resources */,
+				3833298428CAC4BD00DB425F /* alien_head_ONTOP.heic in Resources */,
+				3833297728CAC28E00DB425F /* alien.scnz in Resources */,
+				3833297F28CAC4BD00DB425F /* alien_head_SPECROUGHLW.heic in Resources */,
+				3833298028CAC4BD00DB425F /* alien_head_DIFFUSE.heic in Resources */,
+				3833298328CAC4BD00DB425F /* alien-cameras.scn in Resources */,
+				3833298128CAC4BD00DB425F /* alien-cameraGrid.atx in Resources */,
 				3863CA2E28CABEF500D31BBE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3863CA3728CABF8600D31BBE /* XCRemoteSwiftPackageReference "SceneView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/general-framework/SceneView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3863CA3828CABF8700D31BBE /* SceneView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3863CA3728CABF8600D31BBE /* XCRemoteSwiftPackageReference "SceneView" */;
+			productName = SceneView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3863CA1E28CABEF400D31BBE /* Project object */;
 }
