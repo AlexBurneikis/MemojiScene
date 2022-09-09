@@ -11,21 +11,24 @@ import SceneView
 
 let alien = "alien.scnz"
 
-let scene: SCNScene = {
-    SCNScene(named: alien)!
-}()
+let scene = SCNScene()
+let sceneView = SCNView()
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            ZStack {
-                SceneView(scene: scene)
-                    .scaleEffect(0.75)
-            }
+            SceneView(scene: scene, options: [.allowsCameraControl, .autoenablesDefaultLighting])
+                .frame(width: 300, height: 300)
+                .onAppear {
+                     let node = SCNNode()
+                     node.geometry = SCNSphere(radius: 0.5)
+                     node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
+                     node.position = SCNVector3(0, 0, -1)
+                     scene.rootNode.addChildNode(node)
+                }
             List {
-                Text("Sample Text")
+                
             }
-            .frame(height: UIScreen.main.bounds.height * 0.55)
         }
     }
 }
