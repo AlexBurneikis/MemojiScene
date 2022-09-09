@@ -11,12 +11,21 @@ import SceneView
 
 let alien = "alien.scnz"
 
-let scene: SCNScene = { SCNScene(named: alien)! }()
+let scene: SCNScene = {
+    SCNScene(named: alien)!
+}()
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            SceneView(scene: scene)
+        VStack {
+            ZStack {
+                SceneView(scene: scene)
+                    .scaleEffect(0.75)
+            }
+            List {
+                Text("Sample Text")
+            }
+            .frame(height: UIScreen.main.bounds.height * 0.55)
         }
     }
 }
