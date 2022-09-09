@@ -17,7 +17,6 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             SceneView(scene: scene)
-                
         }
     }
 }

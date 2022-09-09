@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sceneview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/general-framework/SceneView",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ed018cff7e0556d091b8ecac71c95b0e29cb89e2"
+      }
+    }
+  ],
+  "version" : 2
+}
