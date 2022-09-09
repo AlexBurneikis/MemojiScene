@@ -20,6 +20,18 @@
 		3863CA2E28CABEF500D31BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3863CA2D28CABEF500D31BBE /* Assets.xcassets */; };
 		3863CA3128CABEF500D31BBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3863CA3028CABEF500D31BBE /* Preview Assets.xcassets */; };
 		3863CA3928CABF8700D31BBE /* SceneView in Frameworks */ = {isa = PBXBuildFile; productRef = 3863CA3828CABF8700D31BBE /* SceneView */; };
+		389C8F4028CB6F8300FF974E /* dog-cameras.scn in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3428CB6F8300FF974E /* dog-cameras.scn */; };
+		389C8F4128CB6F8300FF974E /* dog_head_AMBIENT.heic in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3528CB6F8300FF974E /* dog_head_AMBIENT.heic */; };
+		389C8F4228CB6F8300FF974E /* dog_head_SPECROUGHLW.heic in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3628CB6F8300FF974E /* dog_head_SPECROUGHLW.heic */; };
+		389C8F4328CB6F8300FF974E /* dog_mouth_DIFFUSE.heic in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3728CB6F8300FF974E /* dog_mouth_DIFFUSE.heic */; };
+		389C8F4428CB6F8300FF974E /* dog_head_DIFFUSE.heic in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3828CB6F8300FF974E /* dog_head_DIFFUSE.heic */; };
+		389C8F4528CB6F8300FF974E /* dog.scnz in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3928CB6F8300FF974E /* dog.scnz */; };
+		389C8F4628CB6F8300FF974E /* dog_tongue_SPECROUGHLW.heic in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3A28CB6F8300FF974E /* dog_tongue_SPECROUGHLW.heic */; };
+		389C8F4728CB6F8300FF974E /* dog_head_ONTOP.heic in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3B28CB6F8300FF974E /* dog_head_ONTOP.heic */; };
+		389C8F4828CB6F8300FF974E /* dog-camera.atx in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3C28CB6F8300FF974E /* dog-camera.atx */; };
+		389C8F4928CB6F8300FF974E /* dog_head_AO.heic in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3D28CB6F8300FF974E /* dog_head_AO.heic */; };
+		389C8F4A28CB6F8300FF974E /* dog_tongue_AO.heic in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3E28CB6F8300FF974E /* dog_tongue_AO.heic */; };
+		389C8F4B28CB6F8300FF974E /* dog-cameraGrid.atx in Resources */ = {isa = PBXBuildFile; fileRef = 389C8F3F28CB6F8300FF974E /* dog-cameraGrid.atx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +48,18 @@
 		3863CA2B28CABEF400D31BBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3863CA2D28CABEF500D31BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3863CA3028CABEF500D31BBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		389C8F3428CB6F8300FF974E /* dog-cameras.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "dog-cameras.scn"; sourceTree = "<group>"; };
+		389C8F3528CB6F8300FF974E /* dog_head_AMBIENT.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_head_AMBIENT.heic; sourceTree = "<group>"; };
+		389C8F3628CB6F8300FF974E /* dog_head_SPECROUGHLW.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_head_SPECROUGHLW.heic; sourceTree = "<group>"; };
+		389C8F3728CB6F8300FF974E /* dog_mouth_DIFFUSE.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_mouth_DIFFUSE.heic; sourceTree = "<group>"; };
+		389C8F3828CB6F8300FF974E /* dog_head_DIFFUSE.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_head_DIFFUSE.heic; sourceTree = "<group>"; };
+		389C8F3928CB6F8300FF974E /* dog.scnz */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog.scnz; sourceTree = "<group>"; };
+		389C8F3A28CB6F8300FF974E /* dog_tongue_SPECROUGHLW.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_tongue_SPECROUGHLW.heic; sourceTree = "<group>"; };
+		389C8F3B28CB6F8300FF974E /* dog_head_ONTOP.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_head_ONTOP.heic; sourceTree = "<group>"; };
+		389C8F3C28CB6F8300FF974E /* dog-camera.atx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dog-camera.atx"; sourceTree = "<group>"; };
+		389C8F3D28CB6F8300FF974E /* dog_head_AO.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_head_AO.heic; sourceTree = "<group>"; };
+		389C8F3E28CB6F8300FF974E /* dog_tongue_AO.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = dog_tongue_AO.heic; sourceTree = "<group>"; };
+		389C8F3F28CB6F8300FF974E /* dog-cameraGrid.atx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dog-cameraGrid.atx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +108,7 @@
 		3863CA2828CABEF400D31BBE /* MemojiScene */ = {
 			isa = PBXGroup;
 			children = (
+				389C8F3328CB6F8300FF974E /* dog */,
 				3833298628CAC4F100DB425F /* alien */,
 				3863CA2928CABEF400D31BBE /* MemojiSceneApp.swift */,
 				3863CA2B28CABEF400D31BBE /* ContentView.swift */,
@@ -99,6 +124,25 @@
 				3863CA3028CABEF500D31BBE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		389C8F3328CB6F8300FF974E /* dog */ = {
+			isa = PBXGroup;
+			children = (
+				389C8F3428CB6F8300FF974E /* dog-cameras.scn */,
+				389C8F3528CB6F8300FF974E /* dog_head_AMBIENT.heic */,
+				389C8F3628CB6F8300FF974E /* dog_head_SPECROUGHLW.heic */,
+				389C8F3728CB6F8300FF974E /* dog_mouth_DIFFUSE.heic */,
+				389C8F3828CB6F8300FF974E /* dog_head_DIFFUSE.heic */,
+				389C8F3928CB6F8300FF974E /* dog.scnz */,
+				389C8F3A28CB6F8300FF974E /* dog_tongue_SPECROUGHLW.heic */,
+				389C8F3B28CB6F8300FF974E /* dog_head_ONTOP.heic */,
+				389C8F3C28CB6F8300FF974E /* dog-camera.atx */,
+				389C8F3D28CB6F8300FF974E /* dog_head_AO.heic */,
+				389C8F3E28CB6F8300FF974E /* dog_tongue_AO.heic */,
+				389C8F3F28CB6F8300FF974E /* dog-cameraGrid.atx */,
+			);
+			path = dog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,16 +209,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389C8F4828CB6F8300FF974E /* dog-camera.atx in Resources */,
 				3863CA3128CABEF500D31BBE /* Preview Assets.xcassets in Resources */,
 				3833298228CAC4BD00DB425F /* alien_head_AO.heic in Resources */,
+				389C8F4328CB6F8300FF974E /* dog_mouth_DIFFUSE.heic in Resources */,
+				389C8F4A28CB6F8300FF974E /* dog_tongue_AO.heic in Resources */,
 				3833298528CAC4BD00DB425F /* alien-camera.atx in Resources */,
 				3833298428CAC4BD00DB425F /* alien_head_ONTOP.heic in Resources */,
 				3833297728CAC28E00DB425F /* alien.scnz in Resources */,
 				3833297F28CAC4BD00DB425F /* alien_head_SPECROUGHLW.heic in Resources */,
+				389C8F4128CB6F8300FF974E /* dog_head_AMBIENT.heic in Resources */,
 				3833298028CAC4BD00DB425F /* alien_head_DIFFUSE.heic in Resources */,
+				389C8F4B28CB6F8300FF974E /* dog-cameraGrid.atx in Resources */,
 				3833298328CAC4BD00DB425F /* alien-cameras.scn in Resources */,
+				389C8F4228CB6F8300FF974E /* dog_head_SPECROUGHLW.heic in Resources */,
+				389C8F4028CB6F8300FF974E /* dog-cameras.scn in Resources */,
 				3833298128CAC4BD00DB425F /* alien-cameraGrid.atx in Resources */,
 				3863CA2E28CABEF500D31BBE /* Assets.xcassets in Resources */,
+				389C8F4728CB6F8300FF974E /* dog_head_ONTOP.heic in Resources */,
+				389C8F4528CB6F8300FF974E /* dog.scnz in Resources */,
+				389C8F4928CB6F8300FF974E /* dog_head_AO.heic in Resources */,
+				389C8F4428CB6F8300FF974E /* dog_head_DIFFUSE.heic in Resources */,
+				389C8F4628CB6F8300FF974E /* dog_tongue_SPECROUGHLW.heic in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

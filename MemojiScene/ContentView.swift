@@ -10,6 +10,7 @@ import SceneKit
 import SceneView
 
 let alien = "alien.scnz"
+let dog = "dog.scnz"
 
 let scene = SCNScene()
 let sceneView = SCNView()
@@ -18,16 +19,45 @@ struct ContentView: View {
     var body: some View {
         VStack {
             SceneView(scene: scene, options: [.allowsCameraControl, .autoenablesDefaultLighting])
-                .frame(width: 300, height: 300)
+                .frame(height: 300)
                 .onAppear {
-                     let node = SCNNode()
-                     node.geometry = SCNSphere(radius: 0.5)
-                     node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
-                     node.position = SCNVector3(0, 0, -1)
-                     scene.rootNode.addChildNode(node)
+                    //add the alien scene into the scene
+                    let alienScene = SCNScene(named: alien)!
+                    let alienNodes = alienScene.rootNode.childNodes
+                    for node in alienNodes {
+                        scene.rootNode.addChildNode(node)
+                    }
                 }
             List {
-                
+                //make a button for dog and alien
+                Button(action: {
+                    //remove all nodes from the scene
+                    scene.rootNode.enumerateChildNodes { (node, _) in
+                        node.removeFromParentNode()
+                    }
+                    //add the dog scene into the scene
+                    let dogScene = SCNScene(named: dog)!
+                    let dogNodes = dogScene.rootNode.childNodes
+                    for node in dogNodes {
+                        scene.rootNode.addChildNode(node)
+                    }
+                }, label: {
+                    Text("Dog")
+                })
+                Button(action: {
+                    //remove all nodes from the scene
+                    scene.rootNode.enumerateChildNodes { (node, _) in
+                        node.removeFromParentNode()
+                    }
+                    //add the alien scene into the scene
+                    let alienScene = SCNScene(named: alien)!
+                    let alienNodes = alienScene.rootNode.childNodes
+                    for node in alienNodes {
+                        scene.rootNode.addChildNode(node)
+                    }
+                }, label: {
+                    Text("Alien")
+                })
             }
         }
     }
