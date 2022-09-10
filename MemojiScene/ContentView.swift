@@ -12,32 +12,42 @@ import SceneView
 let scene = SCNScene()
 let sceneView = SCNView()
 
+func addSceneToScene(named: String) {
+    let tempScene = SCNScene(named: named)!
+    let tempNodes = tempScene.rootNode.childNodes
+    for node in tempNodes {
+        scene.rootNode.addChildNode(node)
+    }
+}
+
 struct ContentView: View {
-    private var hairSelection: String = "afro_long_down_sidePart"
+    
+    func makeAddButton(assetPath: String) -> some View {
+        Button {
+            addSceneToScene(named: assetPath)
+        } label: {
+            SceneView(scene: SCNScene(named: assetPath)!, options: [.autoenablesDefaultLighting])
+                .frame(width: 100, height: 100)
+        }
+        .padding()
+    }
+    
     var body: some View {
         VStack {
             SceneView(scene: scene, options: [.allowsCameraControl, .autoenablesDefaultLighting])
                 .frame(height: 300)
                 .onAppear {
-                    //add the face scene into the scene
-                    let faceScene = SCNScene(named: assetPaths.head.rawValue)!
-                    let faceNodes = faceScene.rootNode.childNodes
-                    for node in faceNodes {
-                        scene.rootNode.addChildNode(node)
-                    }
+                    addSceneToScene(named: assetPaths.head.rawValue)
                 }
-            List {
-                Button {
-                    let hairScene = SCNScene(named: assetPaths.hair_afro_long_down_sidePart.rawValue)!
-                    let hairNodes = hairScene.rootNode.childNodes
-                    for node in hairNodes {
-                        scene.rootNode.addChildNode(node)
-                    }
-                } label: {
-                    Text("Add Hair")
+            VStack {
+                HStack {
+                    makeAddButton(assetPath: assetPaths.hair.hair_afro_medium_up.rawValue)
+                    makeAddButton(assetPath: assetPaths.hair.hair_curly_medium_up.rawValue)
+                    makeAddButton(assetPath: assetPaths.hair.hair_microBraid_medium_mid.rawValue)
                 }
-
+                Spacer()
             }
+            .frame(maxHeight: .infinity)
         }
     }
 }
