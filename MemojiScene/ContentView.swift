@@ -25,14 +25,14 @@ struct ContentView: View {
     func makeAddButton(assetPath: String) -> some View {
         @State var hidden: Bool = true
         return (
-        Button {
-            addSceneToScene(named: assetPath)
-        } label: {
-            SceneView(scene: SCNScene(named: assetPath)!, options: [.autoenablesDefaultLighting])
-                .frame(width: 100, height: 100)
-//            Text(assetPath)
-        }
-        .padding()
+            Button {
+                addSceneToScene(named: assetPath)
+            } label: {
+                SceneView(scene: SCNScene(named: assetPath)!, options: [.autoenablesDefaultLighting])
+                    .frame(width: 100, height: 100)
+                //            Text(assetPath)
+            }
+                .padding()
         )
     }
     
