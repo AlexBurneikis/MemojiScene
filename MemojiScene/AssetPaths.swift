@@ -8,7 +8,7 @@
 
 //link every asset to its file path
 enum assetPaths: String {
-    enum headwear: String {
+    enum headwear: String, CaseIterable {
         case headwear_tallWrap = "memoji/assets/headwear/headwear_tallWrap.aa/main.scnz"
         case headwear_skullcap = "memoji/assets/headwear/headwear_skullcap.aa/main.scnz"
         case headwear_headscarf = "memoji/assets/headwear/headwear_headscarf.aa/main.scnz"
@@ -69,7 +69,7 @@ enum assetPaths: String {
         case headwear_knottedHeadscarf = "memoji/assets/headwear/headwear_knottedHeadscarf.aa/main.scnz"
     }
     
-    enum nosepiercings: String {
+    enum nosepiercings: String, CaseIterable {
         case nosepiercings_nostrilRing_R = "memoji/assets/nosepiercings/nosepiercings_nostrilRing_R.aa/main.scnz"
         case nosepiercings_nostrilStud_R = "memoji/assets/nosepiercings/nosepiercings_nostrilStud_R.aa/main.scnz"
         case nosepiercings_nostrilRing_L = "memoji/assets/nosepiercings/nosepiercings_nostrilRing_L.aa/main.scnz"
@@ -77,14 +77,14 @@ enum assetPaths: String {
         case nosepiercings_septumRing = "memoji/assets/nosepiercings/nosepiercings_septumRing.aa/main.scnz"
     }
     
-    enum blush: String {
+    enum blush: String, CaseIterable {
         case blush_apples = "memoji/assets/blush/blush_apples.aa/main.scnz"
         case blush_angled = "memoji/assets/blush/blush_angled.aa/main.scnz"
         case blush_flushed = "memoji/assets/blush/blush_flushed.aa/main.scnz"
         case blush_cheekbones = "memoji/assets/blush/blush_cheekbones.aa/main.scnz"
     }
     
-    enum eyeweat: String {
+    enum eyewear: String, CaseIterable {
         case eyewear_aviator_wire = "memoji/assets/eyewear/eyewear_aviator_wire.aa/main.scnz"
         case eyewear_rectangle_wire = "memoji/assets/eyewear/eyewear_rectangle_wire.aa/main.scnz"
         case eyewear_cateye = "memoji/assets/eyewear/eyewear_cateye.aa/main.scnz"
@@ -132,7 +132,7 @@ enum assetPaths: String {
         case eyewear_round = "memoji/assets/eyewear/eyewear_round.aa/main.scnz"
     }
     
-    enum outfit: String {
+    enum outfit: String, CaseIterable {
         case outfit_turtleneck = "memoji/assets/outfit/outfit_turtleneck.aa/main.scnz"
         case outfit_kurta = "memoji/assets/outfit/outfit_kurta.aa/main.scnz"
         case outfit_gandoraGallabya = "memoji/assets/outfit/outfit_gandoraGallabya.aa/main.scnz"
@@ -178,7 +178,7 @@ enum assetPaths: String {
         case outfit_cableKnitSweater = "memoji/assets/outfit/outfit_cableKnitSweater.aa/main.scnz"
     }
     
-    enum eyebrows: String {
+    enum eyebrows: String, CaseIterable {
         case eyebrows_willowLeaf_rounded_thin = "memoji/assets/eyebrows/eyebrows_willowLeaf_rounded_thin.aa/main.scnz"
         case eyebrows_willowLeaf_angled_thick = "memoji/assets/eyebrows/eyebrows_willowLeaf_angled_thick.aa/main.scnz"
         case eyebrows_tadpole_rounded_thin = "memoji/assets/eyebrows/eyebrows_tadpole_rounded_thin.aa/main.scnz"
@@ -205,29 +205,29 @@ enum assetPaths: String {
         case eyebrows_doubleCurve_rounded_thick = "memoji/assets/eyebrows/eyebrows_doubleCurve_rounded_thick.aa/main.scnz"
     }
     
-    enum tonguepiercings: String {
+    enum tonguepiercings: String, CaseIterable {
         case tonguepiercings_bead = "memoji/assets/tonguepiercings/tonguepiercings_bead.aa/main.scnz"
     }
     
-    enum eyeshawdow: String {
+    enum eyeshawdow: String, CaseIterable {
         case eyeshadow_boldRound = "memoji/assets/eyeshadow/eyeshadow_boldRound.aa/main.scnz"
         case eyeshadow_boldWing = "memoji/assets/eyeshadow/eyeshadow_boldWing.aa/main.scnz"
         case eyeshadow_boldRound_combo = "memoji/assets/eyeshadow/eyeshadow_boldRound_combo.aa/main.scnz"
         case eyeshadow_boldWing_combo = "memoji/assets/eyeshadow/eyeshadow_boldWing_combo.aa/main.scnz"
     }
     
-    enum foreheadmark: String {
+    enum foreheadmark: String, CaseIterable {
         case foreheadmark_bindi_large = "memoji/assets/foreheadmark/foreheadmark_bindi_large.aa/main.scnz"
         case foreheadmark_bindi_small = "memoji/assets/foreheadmark/foreheadmark_bindi_small.aa/main.scnz"
     }
     
-    enum freckles: String {
+    enum freckles: String, CaseIterable {
         case freckles_low = "memoji/assets/freckles/freckles_low.aa/main.scnz"
         case freckles_medium = "memoji/assets/freckles/freckles_medium.aa/main.scnz"
         case freckles_high = "memoji/assets/freckles/freckles_high.aa/main.scnz"
     }
     
-    enum audio: String {
+    enum audio: String, CaseIterable {
         case audio_hearingAid_left = "memoji/assets/audio_left/audio_hearingAid_left.aa/main.scnz"
         case audio_hearingAid_right = "memoji/assets/audio_left/audio_hearingAid_right.aa/main.scnz"
         case audio_airPod_right = "memoji/assets/audio_left/audio_airPod_right.aa/main.scnz"
@@ -238,12 +238,12 @@ enum assetPaths: String {
     
     case body = "memoji/assets/body/body.aa/main.scnz"
     
-    enum facialhairhighlights: String {
+    enum facialhairhighlights: String, CaseIterable {
         case facialhairhighlights_gradient = "memoji/assets/facialhairhighlights/facialhairhighlights_gradient.aa/main.scnz"
         case facialhairhighlights_some = "memoji/assets/facialhairhighlights/facialhairhighlights_some.aa/main.scnz"
     }
     
-    enum teeth: String {
+    enum teeth: String, CaseIterable {
         case teeth_standard = "memoji/assets/teeth/teeth_standard.aa/main.scnz"
         case teeth_luckyGap = "memoji/assets/teeth/teeth_luckyGap.aa/main.scnz"
         case teeth_lostTooth = "memoji/assets/teeth/teeth_lostTooth.aa/main.scnz"
@@ -252,7 +252,7 @@ enum assetPaths: String {
         case teeth_singleGoldTooth = "memoji/assets/teeth/teeth_singleGoldTooth.aa/main.scnz"
     }
     
-    enum earrings: String {
+    enum earrings: String, CaseIterable {
         case earrings_right_pearl = "memoji/assets/earrings_left/earrings_right_pearl.aa/main.scnz"
         case earrings_left_captiveBead = "memoji/assets/earrings_left/earrings_left_captiveBead.aa/main.scnz"
         case earrings_right_torpedo = "memoji/assets/earrings_left/earrings_right_torpedo.aa/main.scnz"
@@ -309,7 +309,7 @@ enum assetPaths: String {
         case earrings_left_multiple_hoops = "memoji/assets/earrings_left/earrings_left_multiple_hoops.aa/main.scnz"
     }
     
-    enum browspierxings: String {
+    enum browspierxings: String, CaseIterable {
         case browspiercings_eyebrowRing_R = "memoji/assets/browspiercings/browspiercings_eyebrowRing_R.aa/main.scnz"
         case browspiercings_eyebrow_R = "memoji/assets/browspiercings/browspiercings_eyebrow_R.aa/main.scnz"
         case browspiercings_bridge = "memoji/assets/browspiercings/browspiercings_bridge.aa/main.scnz"
@@ -317,7 +317,7 @@ enum assetPaths: String {
         case browspiercings_eyebrowRing_L = "memoji/assets/browspiercings/browspiercings_eyebrowRing_L.aa/main.scnz"
     }
     
-    enum mouthpiercings: String {
+    enum mouthpiercings: String, CaseIterable {
         case mouthpiercings_snakebite_R = "memoji/assets/mouthpiercings/mouthpiercings_snakebite_R.aa/main.scnz"
         case mouthpiercings_snakebiteRing_R = "memoji/assets/mouthpiercings/mouthpiercings_snakebiteRing_R.aa/main.scnz"
         case mouthpiercings_madonna_R = "memoji/assets/mouthpiercings/mouthpiercings_madonna_R.aa/main.scnz"
@@ -328,19 +328,19 @@ enum assetPaths: String {
         case mouthpiercings_madonna_L = "memoji/assets/mouthpiercings/mouthpiercings_madonna_L.aa/main.scnz"
     }
     
-    enum age: String {
+    enum age: String, CaseIterable {
         case age_olderAdult_25_AO = "memoji/assets/age/age_olderAdult_25_AO.aa/main.scnz"
         case age_olderAdult_AO = "memoji/assets/age/age_olderAdult_AO.aa/main.scnz"
         case age_olderAdult_50_AO = "memoji/assets/age/age_olderAdult_50_AO.aa/main.scnz"
         case age_olderAdult_75_AO = "memoji/assets/age/age_olderAdult_75_AO.aa/main.scnz"
     }
     
-    enum eyepatch: String {
+    enum eyepatch: String, CaseIterable {
         case eyepatch_right = "memoji/assets/eyepatch/eyepatch_right.aa/main.scnz"
         case eyepatch_left = "memoji/assets/eyepatch/eyepatch_left.aa/main.scnz"
     }
     
-    enum sideburns: String {
+    enum sideburns: String, CaseIterable {
         case sideburns_short = "memoji/assets/sideburns/sideburns_short.aa/main.scnz"
         case sideburns_medium = "memoji/assets/sideburns/sideburns_medium.aa/main.scnz"
         case sideburns_long_shadow = "memoji/assets/sideburns/sideburns_long_shadow.aa/main.scnz"
@@ -348,13 +348,13 @@ enum assetPaths: String {
         case sideburns_short_shadow = "memoji/assets/sideburns/sideburns_short_shadow.aa/main.scnz"
     }
     
-    enum highlights: String {
+    enum highlights: String, CaseIterable {
         case highlights_some = "memoji/assets/highlights/highlights_some.aa/main.scnz"
         case highlights_modern = "memoji/assets/highlights/highlights_modern.aa/main.scnz"
         case highlights_gradient = "memoji/assets/highlights/highlights_gradient.aa/main.scnz"
     }
     
-    enum eyeliner: String {
+    enum eyeliner: String, CaseIterable {
         case eyeliner_combo_outerBasic_thick = "memoji/assets/eyeliner/eyeliner_combo_outerBasic_thick.aa/main.scnz"
         case eyeliner_combo_outerFlick_thick = "memoji/assets/eyeliner/eyeliner_combo_outerFlick_thick.aa/main.scnz"
         case eyeliner_upper_basic_thick = "memoji/assets/eyeliner/eyeliner_upper_basic_thick.aa/main.scnz"
@@ -364,7 +364,7 @@ enum assetPaths: String {
         case eyeliner_combo_basicFlick_thick = "memoji/assets/eyeliner/eyeliner_combo_basicFlick_thick.aa/main.scnz"
     }
     
-    enum facewear: String {
+    enum facewear: String, CaseIterable {
         case facewear_pleatedMask = "memoji/assets/facewear/facewear_pleatedMask.aa/main.scnz"
         case facewear_seamMask = "memoji/assets/facewear/facewear_seamMask.aa/main.scnz"
     }
@@ -372,7 +372,7 @@ enum assetPaths: String {
     case eyes_mouth = "memoji/assets/eyes_mouth/eyes_mouth.aa/main.scnz"
     case nosewear_breathingTube = "memoji/assets/nosewear/nosewear_breathingTube.aa/main.scnz"
     
-    enum eyelashes: String {
+    enum eyelashes: String, CaseIterable {
         case eyelashes_spreadFull_long = "memoji/assets/eyelashes/eyelashes_spreadFull_long.aa/main.scnz"
         case eyelashes_spreadSparse_short = "memoji/assets/eyelashes/eyelashes_spreadSparse_short.aa/main.scnz"
         case eyelashes_smoke = "memoji/assets/eyelashes/eyelashes_smoke.aa/main.scnz"
@@ -389,7 +389,7 @@ enum assetPaths: String {
         case eyelashes_natural_thick = "memoji/assets/eyelashes/eyelashes_natural_thick.aa/main.scnz"
     }
     
-    enum hair: String {
+    enum hair: String, CaseIterable {
         case hair_straight_medium_down_flaredBob = "memoji/assets/hair/hair_straight_medium_down_flaredBob.aa/main.scnz"
         case hair_curly_short_up_fade = "memoji/assets/hair/hair_curly_short_up_fade.aa/main.scnz"
         case hair_straight_short_up_balding = "memoji/assets/hair/hair_straight_short_up_balding.aa/main.scnz"
@@ -434,11 +434,9 @@ enum assetPaths: String {
         case hair_straight_long_down_puff = "memoji/assets/hair/hair_straight_long_down_puff.aa/main.scnz"
         case hair_wavy_medium_down_fringe = "memoji/assets/hair/hair_wavy_medium_down_fringe.aa/main.scnz"
         case hair_wavy_medium_down_tousled = "memoji/assets/hair/hair_wavy_medium_down_tousled.aa/main.scnz"
-        case hair_straight_buzzed_up_balding = "memoji/assets/hair/hair_straight_buzzed_up_balding.aa/main.scnz"
         case hair_braid_long_up_upDoFringe = "memoji/assets/hair/hair_braid_long_up_upDoFringe.aa/main.scnz"
         case hair_straight_short_up_crewCut = "memoji/assets/hair/hair_straight_short_up_crewCut.aa/main.scnz"
         case hair_dreadlocks_medium_down = "memoji/assets/hair/hair_dreadlocks_medium_down.aa/main.scnz"
-        case hair_straight_short_up_widowsPeak = "memoji/assets/hair/hair_straight_short_up_widowsPeak.aa/main.scnz"
         case hair_wavy_long_mid_upDo = "memoji/assets/hair/hair_wavy_long_mid_upDo.aa/main.scnz"
         case hair_wavy_long_mid_upDoFringe = "memoji/assets/hair/hair_wavy_long_mid_upDoFringe.aa/main.scnz"
         case hair_straight_long_mid_sidePart = "memoji/assets/hair/hair_straight_long_mid_sidePart.aa/main.scnz"
@@ -455,7 +453,6 @@ enum assetPaths: String {
         case hair_curly_medium_up = "memoji/assets/hair/hair_curly_medium_up.aa/main.scnz"
         case hair_curly_medium_mid_sideLocks = "memoji/assets/hair/hair_curly_medium_mid_sideLocks.aa/main.scnz"
         case hair_straight_short_down_bowlCut = "memoji/assets/hair/hair_straight_short_down_bowlCut.aa/main.scnz"
-        case hair_straight_buzzed_up_widowsPeak = "memoji/assets/hair/hair_straight_buzzed_up_widowsPeak.aa/main.scnz"
         case hair_straight_long_up_bun = "memoji/assets/hair/hair_straight_long_up_bun.aa/main.scnz"
         case hair_afro_short_up_halfSwoop = "memoji/assets/hair/hair_afro_short_up_halfSwoop.aa/main.scnz"
         case hair_straight_long_up_doubleBunFringe = "memoji/assets/hair/hair_straight_long_up_doubleBunFringe.aa/main.scnz"
@@ -479,14 +476,12 @@ enum assetPaths: String {
         case hair_microBraid_medium_down_centerPart = "memoji/assets/hair/hair_microBraid_medium_down_centerPart.aa/main.scnz"
         case hair_curly_short_mid_sideLocks = "memoji/assets/hair/hair_curly_short_mid_sideLocks.aa/main.scnz"
         case hair_straight_medium_down_fringe = "memoji/assets/hair/hair_straight_medium_down_fringe.aa/main.scnz"
-        case hair_straight_buzzed_up_shaped = "memoji/assets/hair/hair_straight_buzzed_up_shaped.aa/main.scnz"
         case hair_straight_medium_mid_sidePart = "memoji/assets/hair/hair_straight_medium_mid_sidePart.aa/main.scnz"
         case hair_microBraid_short_mid_sidePartLayered = "memoji/assets/hair/hair_microBraid_short_mid_sidePartLayered.aa/main.scnz"
         case hair_curly_long_up_bun = "memoji/assets/hair/hair_curly_long_up_bun.aa/main.scnz"
         case hair_curly_medium_down_sidePart = "memoji/assets/hair/hair_curly_medium_down_sidePart.aa/main.scnz"
         case hair_straight_short_down_fringe = "memoji/assets/hair/hair_straight_short_down_fringe.aa/main.scnz"
         case hair_straight_buzzed_up_baldTop = "memoji/assets/hair/hair_straight_buzzed_up_baldTop.aa/main.scnz"
-        case hair_straight_buzzed_up_natural = "memoji/assets/hair/hair_straight_buzzed_up_natural.aa/main.scnz"
         case hair_microBraid_long_down_centerPart = "memoji/assets/hair/hair_microBraid_long_down_centerPart.aa/main.scnz"
         case hair_afro_short_up_lowTopFade = "memoji/assets/hair/hair_afro_short_up_lowTopFade.aa/main.scnz"
         case hair_microBraid_short_up_halfFadeSwoop = "memoji/assets/hair/hair_microBraid_short_up_halfFadeSwoop.aa/main.scnz"
@@ -522,7 +517,7 @@ enum assetPaths: String {
     
     case head = "memoji/assets/faces/head.aa/main.scnz"
     
-    enum facialhair: String {
+    enum facialhair: String, CaseIterable {
         case facialhair_beard_soulPatch = "memoji/assets/facialhair/facialhair_beard_soulPatch.aa/main.scnz"
         case facialhair_beard_anchor = "memoji/assets/facialhair/facialhair_beard_anchor.aa/main.scnz"
         case facialhair_beard_ducktail = "memoji/assets/facialhair/facialhair_beard_ducktail.aa/main.scnz"
@@ -552,7 +547,7 @@ enum assetPaths: String {
         case facialhair_combo_ducktail = "memoji/assets/facialhair/facialhair_combo_ducktail.aa/main.scnz"
     }
     
-    enum beautymarks: String {
+    enum beautymarks: String, CaseIterable {
         case beautymarks_leftupperCheek = "memoji/assets/beautymarks/beautymarks_leftupperCheek.aa/main.scnz"
         case beautymarks_leftUpperLip = "memoji/assets/beautymarks/beautymarks_leftUpperLip.aa/main.scnz"
         case beautymarks_rightUpperLip = "memoji/assets/beautymarks/beautymarks_rightUpperLip.aa/main.scnz"

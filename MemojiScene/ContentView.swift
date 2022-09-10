@@ -26,10 +26,27 @@ struct ContentView: View {
         Button {
             addSceneToScene(named: assetPath)
         } label: {
-            SceneView(scene: SCNScene(named: assetPath)!, options: [.autoenablesDefaultLighting])
-                .frame(width: 100, height: 100)
+//            SceneView(scene: SCNScene(named: assetPath)!, options: [.autoenablesDefaultLighting])
+//                .frame(width: 100, height: 100)
+            Text(assetPath)
         }
         .padding()
+    }
+    
+    func makeThreeButtons(pathOne: String, pathTwo: String, pathThree: String) -> some View {
+        HStack {
+            makeAddButton(assetPath: pathOne)
+            makeAddButton(assetPath: pathTwo)
+            makeAddButton(assetPath: pathThree)
+        }
+    }
+    
+    //make a method of creating buttons for a section of assetpaths given the enumerable
+    func makeButtonSection(assetPaths: [String]) -> some View {
+        //for every element in the array, make a button, every three buttons make a new row
+            ForEach(0..<assetPaths.count/3, id: \.self) { index in
+                makeThreeButtons(pathOne: assetPaths[index*3], pathTwo: assetPaths[index*3+1], pathThree: assetPaths[index*3+2])
+            }
     }
     
     var body: some View {
@@ -39,13 +56,14 @@ struct ContentView: View {
                 .onAppear {
                     addSceneToScene(named: assetPaths.head.rawValue)
                 }
-            VStack {
-                HStack {
-                    makeAddButton(assetPath: assetPaths.hair.hair_afro_medium_up.rawValue)
-                    makeAddButton(assetPath: assetPaths.hair.hair_curly_medium_up.rawValue)
-                    makeAddButton(assetPath: assetPaths.hair.hair_microBraid_medium_mid.rawValue)
-                }
-                Spacer()
+            ScrollView {
+                makeButtonSection(assetPaths: {
+                    var paths: [String] = []
+                    for path in assetPaths.hair.allCases {
+                        paths.append(path.rawValue)
+                    }
+                    return paths
+                }())
             }
             .frame(maxHeight: .infinity)
         }
