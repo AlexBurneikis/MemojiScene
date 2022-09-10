@@ -23,14 +23,17 @@ func addSceneToScene(named: String) {
 struct ContentView: View {
     
     func makeAddButton(assetPath: String) -> some View {
+        @State var hidden: Bool = true
+        return (
         Button {
             addSceneToScene(named: assetPath)
         } label: {
-//            SceneView(scene: SCNScene(named: assetPath)!, options: [.autoenablesDefaultLighting])
-//                .frame(width: 100, height: 100)
-            Text(assetPath)
+            SceneView(scene: SCNScene(named: assetPath)!, options: [.autoenablesDefaultLighting])
+                .frame(width: 100, height: 100)
+//            Text(assetPath)
         }
         .padding()
+        )
     }
     
     func makeThreeButtons(pathOne: String, pathTwo: String, pathThree: String) -> some View {
@@ -41,12 +44,13 @@ struct ContentView: View {
         }
     }
     
-    //make a method of creating buttons for a section of assetpaths given the enumerable
     func makeButtonSection(assetPaths: [String]) -> some View {
         //for every element in the array, make a button, every three buttons make a new row
+        LazyVStack {
             ForEach(0..<assetPaths.count/3, id: \.self) { index in
                 makeThreeButtons(pathOne: assetPaths[index*3], pathTwo: assetPaths[index*3+1], pathThree: assetPaths[index*3+2])
             }
+        }
     }
     
     var body: some View {
