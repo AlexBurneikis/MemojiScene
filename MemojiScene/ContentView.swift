@@ -9,9 +9,6 @@ import SwiftUI
 import SceneKit
 import SceneView
 
-let head = "memoji/assets/faces/head.aa/main.scnz"
-let afro_long_down_sidePart = "memoji/assets/hair/hair_afro_long_down_sidePart.aa/main.scnz"
-
 let scene = SCNScene()
 let sceneView = SCNView()
 
@@ -23,7 +20,7 @@ struct ContentView: View {
                 .frame(height: 300)
                 .onAppear {
                     //add the face scene into the scene
-                    let faceScene = SCNScene(named: head)!
+                    let faceScene = SCNScene(named: assetPaths.head.rawValue)!
                     let faceNodes = faceScene.rootNode.childNodes
                     for node in faceNodes {
                         scene.rootNode.addChildNode(node)
@@ -31,7 +28,7 @@ struct ContentView: View {
                 }
             List {
                 Button {
-                    let hairScene = SCNScene(named: afro_long_down_sidePart)!
+                    let hairScene = SCNScene(named: assetPaths.hair_afro_long_down_sidePart.rawValue)!
                     let hairNodes = hairScene.rootNode.childNodes
                     for node in hairNodes {
                         scene.rootNode.addChildNode(node)
