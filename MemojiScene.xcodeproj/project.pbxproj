@@ -12,6 +12,10 @@
 		3863CA2E28CABEF500D31BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3863CA2D28CABEF500D31BBE /* Assets.xcassets */; };
 		3863CA3128CABEF500D31BBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3863CA3028CABEF500D31BBE /* Preview Assets.xcassets */; };
 		3863CA3928CABF8700D31BBE /* SceneView in Frameworks */ = {isa = PBXBuildFile; productRef = 3863CA3828CABF8700D31BBE /* SceneView */; };
+		38865FE828CD60D400829A84 /* HairSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38865FE728CD60D400829A84 /* HairSelectionView.swift */; };
+		38865FEA28CD672100829A84 /* addButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38865FE928CD672100829A84 /* addButton.swift */; };
+		38865FEC28CD67D000829A84 /* addToPreviewMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38865FEB28CD67D000829A84 /* addToPreviewMethod.swift */; };
+		38865FEE28CD69B400829A84 /* MemojiPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38865FED28CD69B400829A84 /* MemojiPreviewView.swift */; };
 		38FFB65228CC5A0500DB05A6 /* AssetPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FFB65128CC5A0500DB05A6 /* AssetPaths.swift */; };
 		38FFB65428CC5A8B00DB05A6 /* memoji in Resources */ = {isa = PBXBuildFile; fileRef = 38FFB65328CC5A8B00DB05A6 /* memoji */; };
 /* End PBXBuildFile section */
@@ -22,6 +26,10 @@
 		3863CA2B28CABEF400D31BBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3863CA2D28CABEF500D31BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3863CA3028CABEF500D31BBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38865FE728CD60D400829A84 /* HairSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairSelectionView.swift; sourceTree = "<group>"; };
+		38865FE928CD672100829A84 /* addButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addButton.swift; sourceTree = "<group>"; };
+		38865FEB28CD67D000829A84 /* addToPreviewMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addToPreviewMethod.swift; sourceTree = "<group>"; };
+		38865FED28CD69B400829A84 /* MemojiPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemojiPreviewView.swift; sourceTree = "<group>"; };
 		38FFB65128CC5A0500DB05A6 /* AssetPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPaths.swift; sourceTree = "<group>"; };
 		38FFB65328CC5A8B00DB05A6 /* memoji */ = {isa = PBXFileReference; lastKnownFileType = folder; path = memoji; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +68,10 @@
 				38FFB65328CC5A8B00DB05A6 /* memoji */,
 				3863CA2928CABEF400D31BBE /* MemojiSceneApp.swift */,
 				3863CA2B28CABEF400D31BBE /* ContentView.swift */,
+				38865FED28CD69B400829A84 /* MemojiPreviewView.swift */,
+				38865FE728CD60D400829A84 /* HairSelectionView.swift */,
+				38865FE928CD672100829A84 /* addButton.swift */,
+				38865FEB28CD67D000829A84 /* addToPreviewMethod.swift */,
 				38FFB65128CC5A0500DB05A6 /* AssetPaths.swift */,
 				3863CA2D28CABEF500D31BBE /* Assets.xcassets */,
 				3863CA2F28CABEF500D31BBE /* Preview Content */,
@@ -153,8 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3863CA2C28CABEF400D31BBE /* ContentView.swift in Sources */,
+				38865FEE28CD69B400829A84 /* MemojiPreviewView.swift in Sources */,
+				38865FEA28CD672100829A84 /* addButton.swift in Sources */,
 				38FFB65228CC5A0500DB05A6 /* AssetPaths.swift in Sources */,
 				3863CA2A28CABEF400D31BBE /* MemojiSceneApp.swift in Sources */,
+				38865FE828CD60D400829A84 /* HairSelectionView.swift in Sources */,
+				38865FEC28CD67D000829A84 /* addToPreviewMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
